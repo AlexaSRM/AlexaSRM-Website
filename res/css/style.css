@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/illustrations_svg/Artboard-1-copy-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+nav ul li {
+  display: block;
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+.al-event-card {
+  margin: 100px auto;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.al-event-card .row {
+  background-color: whitesmoke;
+}
+
+.al-event-card .row .col-md-4 {
+  padding: 0px !important;
+}
+
+.al-event-card .row .al-event-card-image {
+  height: 100%;
+  width: 100%;
+}
+
+.al-event-card .row .al-event-card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content {
+  padding: 50px 10px;
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content h3 {
+  color: #252021;
+  font-weight: 700;
+  opacity: 0.8;
+  font-size: 32px;
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
