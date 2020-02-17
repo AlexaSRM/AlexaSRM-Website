@@ -26,6 +26,7 @@ nav{
     bottom: 0;
     background-color: whitesmoke;
     display: flex;
+    z-index: 99;
     ul{
        display: flex;
        margin: 0;
@@ -33,15 +34,23 @@ nav{
         width: 100%;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
         flex-wrap: nowrap;
         li{
             display: block;
             background-color: #f1f1f1;
-            margin: 10px;
+            padding: 5px 10px;
             text-align: center;
             font-size: 24px;
             width: 100%;
+
+            @media (max-width: 576px){
+                font-size: 12px;
+                padding: 0px;
+            }
+        }
+        li.active{
+            background-color: #000000;
+            color: #f1f1f1;
         }
     }
 }
@@ -50,7 +59,7 @@ nav{
     margin: 100px auto;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     .row{
-        background-color: whitesmoke;
+        background-color: #ffffff;
         .col-md-4{
             padding: 0px !important;
         }
@@ -75,8 +84,56 @@ nav{
                     display: flex;
                     list-style: none;
                     flex-direction: row;
+                    justify-content: flex-start;
+                    li{
+                        color: rgba(0,0,0,0.25);
+                        margin-right: 30px;
+                        font-size: 14px;
+                        i{
+                            padding: 0px 5px;
+                        }
+                    }
+                    @media(max-width: 576px){
+                        flex-direction: column;
+                    }
+                }
+                button {
+                    border: none;
+                    padding: 5px 15px;
+                    background-color: $alexa-primary;
+                    border-radius: 20px;
+                    color: #f1f1f1;
+                    font-weight: bolder;
                 }
             }
         }
+    }
+    @media(max-width: 576px){
+        margin-top: 0px;
+    }
+}
+
+.cert-section{
+    position: relative;
+    width: 100%;
+    .row{
+        button{
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            background: none;
+            border-bottom: 2px solid $alexa-primary;
+            text-decoration: none;
+            span{
+                font-weight: bold;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        margin-bottom: 300px;
     }
 }
