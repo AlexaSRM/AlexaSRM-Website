@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/illustrations_svg/Artboard-1-copy-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav.bottom-nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 99;
+}
+
+nav.bottom-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+nav.bottom-nav ul li {
+  display: block;
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+nav.bottom-nav ul li:hover {
+  color: #f1f1f1 !important;
+  background-color: #252021;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+}
+
+nav.bottom-nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #252021;
+}
+
+nav.bottom-nav ul li a:hover {
+  color: #f1f1f1 !important;
+  background-color: #252021;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+}
+
+@media (max-width: 576px) {
+  nav.bottom-nav ul li {
+    font-size: 12px;
+    padding: 0px;
+  }
+}
+
+nav.bottom-nav ul li.active {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+nav.bottom-nav ul li.active a {
+  display: block;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.al-event-card {
+  margin: 100px auto;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.al-event-card .row {
+  background-color: #ffffff;
+}
+
+.al-event-card .row .col-md-4 {
+  padding: 0px !important;
+}
+
+.al-event-card .row .al-event-card-image {
+  height: 100%;
+  width: 100%;
+}
+
+.al-event-card .row .al-event-card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content {
+  padding: 50px 10px;
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content h3 {
+  color: #252021;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content ul li {
+  color: rgba(0, 0, 0, 0.25);
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content ul li i {
+  padding: 0px 5px;
+}
+
+@media (max-width: 576px) {
+  .al-event-card .row .col-md-8 .al-event-card-content ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.al-event-card .row .col-md-8 .al-event-card-content button {
+  border: none;
+  padding: 5px 15px;
+  background-color: #31C4F3;
+  border-radius: 20px;
+  color: #f1f1f1;
+  font-weight: bolder;
+}
+
+@media (max-width: 576px) {
+  .al-event-card {
+    margin-top: 0px;
+  }
+}
+
+.cert-section {
+  position: relative;
+  width: 100%;
+  margin: 100px auto;
+}
+
+.cert-section .row button {
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #31C4F3;
+  text-decoration: none;
+}
+
+.cert-section .row button span {
+  font-weight: bold;
+}
+
+.cert-section .row button:focus {
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .cert-section {
+    margin-bottom: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
