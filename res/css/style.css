@@ -18,7 +18,7 @@ body {
   background-position: center;
 }
 
-nav {
+nav.bottom-nav {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -29,7 +29,7 @@ nav {
   z-index: 99;
 }
 
-nav ul {
+nav.bottom-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,7 @@ nav ul {
   flex-wrap: nowrap;
 }
 
-nav ul li {
+nav.bottom-nav ul li {
   display: block;
   background-color: #f1f1f1;
   padding: 5px 10px;
@@ -56,15 +56,41 @@ nav ul li {
   width: 100%;
 }
 
+nav.bottom-nav ul li:hover {
+  color: #f1f1f1 !important;
+  background-color: #252021;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+nav.bottom-nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #252021;
+}
+
+nav.bottom-nav ul li a:hover {
+  color: #f1f1f1 !important;
+  background-color: #252021;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
 @media (max-width: 576px) {
-  nav ul li {
+  nav.bottom-nav ul li {
     font-size: 12px;
     padding: 0px;
   }
 }
-nav ul li.active {
+nav.bottom-nav ul li.active {
   background-color: #000000;
   color: #f1f1f1;
+}
+
+nav.bottom-nav ul li.active a {
+  display: block;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .al-event-card {
@@ -99,7 +125,6 @@ nav ul li.active {
   color: #252021;
   font-weight: 700;
   opacity: 0.8;
-  font-size: 32px;
 }
 
 .al-event-card .row .col-md-8 .al-event-card-content ul {
@@ -151,6 +176,7 @@ nav ul li.active {
 .cert-section {
   position: relative;
   width: 100%;
+  margin: 100px auto;
 }
 
 .cert-section .row button {

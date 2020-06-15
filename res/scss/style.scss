@@ -2,40 +2,42 @@
 @import "_global_variable";
 
 * {
-  font-family: "Montserrat";
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
-  position: relative;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/illustrations_svg/Artboard-1-copy-2.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/illustrations_svg/Artboard-1-copy-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-nav{
+nav.bottom-nav {
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: whitesmoke;
     display: flex;
     z-index: 99;
-    ul{
-       display: flex;
-       margin: 0;
-       list-style: none;
+
+    ul {
+        display: flex;
+        margin: 0;
+        list-style: none;
         width: 100%;
         flex-direction: row;
         align-items: center;
         flex-wrap: nowrap;
-        li{
+
+        li {
             display: block;
             background-color: #f1f1f1;
             padding: 5px 10px;
@@ -43,60 +45,95 @@ nav{
             font-size: 24px;
             width: 100%;
 
-            @media (max-width: 576px){
+            &:hover {
+                color: #f1f1f1 !important;
+                background-color: $bg-primary;
+                transition: background-color .2s ease-out;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: $bg-primary;
+
+                &:hover {
+                    color: #f1f1f1 !important;
+                    background-color: $bg-primary;
+                    transition: background-color .2s ease-out;
+                }
+            }
+
+            @media (max-width: 576px) {
                 font-size: 12px;
                 padding: 0px;
             }
         }
-        li.active{
+
+        li.active {
             background-color: #000000;
             color: #f1f1f1;
+
+            a {
+                display: block;
+                color: whitesmoke;
+                text-decoration: none;
+            }
         }
     }
 }
 
 .al-event-card {
     margin: 100px auto;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    .row{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    .row {
         background-color: #ffffff;
-        .col-md-4{
+
+        .col-md-4 {
             padding: 0px !important;
         }
-        .al-event-card-image{
+
+        .al-event-card-image {
             height: 100%;
             width: 100%;
-            img{
-            width: 100%;
-            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
             }
         }
+
         .col-md-8 {
             .al-event-card-content {
                 padding: 50px 10px;
-                h3{
+
+                h3 {
                     color: $bg-primary;
                     font-weight: 700;
                     opacity: 0.8;
-                    font-size: 32px;
                 }
-                ul{
+
+                ul {
                     display: flex;
                     list-style: none;
                     flex-direction: row;
                     justify-content: flex-start;
-                    li{
-                        color: rgba(0,0,0,0.25);
+
+                    li {
+                        color: rgba(0, 0, 0, 0.25);
                         margin-right: 30px;
                         font-size: 14px;
-                        i{
+
+                        i {
                             padding: 0px 5px;
                         }
                     }
-                    @media(max-width: 576px){
+
+                    @media(max-width: 576px) {
                         flex-direction: column;
                     }
                 }
+
                 button {
                     border: none;
                     padding: 5px 15px;
@@ -108,26 +145,31 @@ nav{
             }
         }
     }
-    @media(max-width: 576px){
+
+    @media(max-width: 576px) {
         margin-top: 0px;
     }
 }
 
-.cert-section{
+.cert-section {
     position: relative;
     width: 100%;
-    .row{
-        button{
+    margin: 100px auto;
+
+    .row {
+        button {
             margin-left: auto;
             margin-right: auto;
             border: none;
             background: none;
             border-bottom: 2px solid $alexa-primary;
             text-decoration: none;
-            span{
+
+            span {
                 font-weight: bold;
             }
-            &:focus{
+
+            &:focus {
                 outline: none;
             }
         }
