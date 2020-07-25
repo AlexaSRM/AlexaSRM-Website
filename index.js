@@ -68,8 +68,8 @@ const stream = require("stream");
     }
   });
 
-  app.listen(port, hostname, () => {
-    console.log(`listening on http://${hostname}:${port}`);
+  app.listen(port, () => {
+    console.log(`listening on port: ${port}`);
   });
 })();
 
